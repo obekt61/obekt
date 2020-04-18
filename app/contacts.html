@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>obekt61 | Контакты</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Podkova:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=cyrillic" rel="stylesheet">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <style>
+    /* ---- grid ---- */
+    .grid {
+      background: #DDD;
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* ---- .grid-item ---- */
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+    }
+
+    .grid-item {
+      float: left;
+    }
+
+    .grid-item img {
+      display: block;
+      max-width: 100%;
+    }
+  </style>
+
+  <script>
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry(grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    imagesLoaded(grid).on('progress', function () {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loader_inner"></div>
+  </div>
+
+  <div class="hidden"></div>
+
+  <header class="page-head">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-9 col-sm-9 col-xs-12">
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Команда</a></li>
+              <li><a href="uslugi.html">Услуги</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="s-wide s-dark">
+
+    <div class="s-header">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-10 col-sm-push-1">
+            <h1>Контакты</h1>
+            <div class="s-descr-wrap">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-push-1">
+            <h3><strong>Телефон/ WhatsApp: </strong> 8 913 731 95 12</h3>
+            <h3>г. Новосибирск, Бехтерева Ольга</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="grid">
+              <div class="grid-item"><img src="./img/photos/img_1.jpg" alt="img_1"></div>
+              <div class="grid-item"><img src="./img/photos/img_2.jpg" alt="img_2"></div>
+              <div class="grid-item"><img src="./img/photos/img_3.jpg" alt="img_3"></div>
+              <div class="grid-item"><img src="./img/photos/img_4.jpg" alt="img_4"></div>
+              <div class="grid-item"><img src="./img/photos/img_5.jpg" alt="img_5"></div>
+              <div class="grid-item"><img src="./img/photos/img_6.jpg" alt="img_6"></div>
+              <div class="grid-item"><img src="./img/photos/img_7.jpg" alt="img_7"></div>
+              <div class="grid-item"><img src="./img/photos/img_8.jpg" alt="img_8"></div>
+              <div class="grid-item"><img src="./img/photos/img_9.jpg" alt="img_9"></div>
+              <div class="grid-item"><img src="./img/photos/img_10.jpg" alt="img_10"></div>
+              <div class="grid-item"><img src="./img/photos/img_11.jpg" alt="img_11"></div>
+              <div class="grid-item"><img src="./img/photos/img_12.jpg" alt="img_12"></div>
+              <div class="grid-item"><img src="./img/photos/img_13.jpg" alt="img_13"></div>
+              <div class="grid-item"><img src="./img/photos/img_14.jpg" alt="img_14"></div>
+              <div class="grid-item"><img src="./img/photos/img_15.jpg" alt="img_15"></div>
+              <div class="grid-item"><img src="./img/photos/img_16.jpg" alt="img_16"></div>
+              <div class="grid-item"><img src="./img/photos/img_17.jpg" alt="img_17"></div>
+              <div class="grid-item"><img src="./img/photos/img_18.jpg" alt="img_18"></div>
+              <div class="grid-item"><img src="./img/photos/img_19.jpg" alt="img_19"></div>
+              <div class="grid-item"><img src="./img/photos/img_20.jpg" alt="img_20"></div>
+              <div class="grid-item"><img src="./img/photos/img_21.jpg" alt="img_21"></div>
+              <div class="grid-item"><img src="./img/photos/img_22.jpg" alt="img_22"></div>
+              <div class="grid-item"><img src="./img/photos/img_23.jpg" alt="img_23"></div>
+              <div class="grid-item"><img src="./img/photos/img_24.jpg" alt="img_24"></div>
+            </div>
+          </div>
+      </div> <!-- /container -->
+
+    </div>
+
+  </section>
+
+  <footer class="main_footer bg_dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          obekt61 &copy; 2018
+
+          <br>
+          С уважением,
+          Ольга.
+          Тел. 8 913 731 95 12
+          Г. Новосибирск
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(51699386, "init", {
+      id: 51699386,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/51699386" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
