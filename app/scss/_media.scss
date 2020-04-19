@@ -5,24 +5,75 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+  .main-head video {
+    display: none;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .animated {
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
 
+  .topbar {
+    width: 100%;
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  .page-head .button.ghost-button {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    display: block;
+    float: none !important;
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+  .person {
+    float: none !important;
+    margin: 0 auto;
+  }
 }
 
+@media only screen and (max-width:480px) {
+  .mnu ul li {
+    display: block;
+    margin: 10px 0
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .main-head {
+    background: url('./img/bg-xs.jpg') top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover
+  }
+
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    display: block
+  }
+}
 
 /*==========  Mobile First  ==========*/
 
@@ -43,5 +94,5 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
+
 }
